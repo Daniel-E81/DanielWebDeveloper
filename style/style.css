@@ -134,17 +134,65 @@ nav .listStyle:hover {
     background-clip: text;
     color: transparent;
 }
-.ProjectIframe{
+
+.ProjectIframe {
     border: none;
     width: 100%;
     height: 23rem;
     border-radius: 0.5rem;
 }
-.ProjectIframe iframe{
-height: 100%;
+
+.ProjectIframe iframe {
+    height: 100%;
 }
-.Posistion{
+
+.Posistion {
     position: relative;
     top: -1rem;
 }
+
 /* End of Projects */
+
+/* Start of Gallery */
+.Gallery {
+    padding: 3rem 0;
+}
+
+.gallery-item {
+    background-color: var(--CardColor);
+    border: 1px solid rgba(90, 173, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.gallery-item:hover {
+    border: 2px solid var(--AccentColor);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(90, 173, 255, 0.4) !important;
+}
+
+.gallery-item img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .card-body {
+    background-color: var(--CardColor);
+}
+
+.gallery-item .card-title {
+    color: var(--AccentColor);
+    font-weight: 600;
+}
+
+.gallery-item .card-text {
+    color: var(--SecondaryColor);
+    font-size: 0.9rem;
+}
+
+/* End of Gallery */
